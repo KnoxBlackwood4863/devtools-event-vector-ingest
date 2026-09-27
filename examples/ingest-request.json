@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "kind": "build",
+      "record_id": "build-1842",
+      "project": "acme-cli",
+      "status": "failed",
+      "occurred_at": "2026-09-04T08:30:00Z",
+      "summary": "Linux package verification failed.",
+      "log": "The package smoke test exited before the publish step."
+    },
+    {
+      "kind": "release",
+      "record_id": "release-92",
+      "project": "acme-cli",
+      "action": "rollback",
+      "version": "3.8.1",
+      "occurred_at": "2026-09-04T08:45:00Z",
+      "summary": "Returned the stable channel to 3.8.0.",
+      "notes": "The release owner confirmed package metadata after the rollback."
+    },
+    {
+      "kind": "diagnostic",
+      "record_id": "diag-501",
+      "project": "acme-cli",
+      "severity": "error",
+      "code": "PACKAGE_CHECK_FAILED",
+      "occurred_at": "2026-09-04T08:31:00Z",
+      "summary": "The installed command was absent from PATH.",
+      "detail": "The diagnostic belongs to the failed Linux package job."
+    }
+  ]
+}
